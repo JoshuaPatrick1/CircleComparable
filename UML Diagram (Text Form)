@@ -1,0 +1,39 @@
+-------------------------------
+GeometricObject (abstract)
+-------------------------------
+- color: String
+- filled: boolean
+- dateCreated: Date
+-------------------------------
++ GeometricObject()
++ GeometricObject(color: String, filled: boolean)
++ getColor(): String
++ setColor(color: String): void
++ isFilled(): boolean
++ setFilled(filled: boolean): void
++ getDateCreated(): Date
++ toString(): String
++ getArea(): double {abstract}
++ getPerimeter(): double {abstract}
+-------------------------------
+
+            ▲
+            |
+-------------------------------
+Circle
+-------------------------------
+- radius: double
+-------------------------------
++ Circle()
++ Circle(radius: double)
++ Circle(radius: double, color: String, filled: boolean)
++ getRadius(): double
++ setRadius(radius: double): void
++ getArea(): double
++ getPerimeter(): double
++ compareTo(o: Circle): int
++ equals(o: Object): boolean
++ toString(): String
+-------------------------------
+
+Circle implements Comparable<Circle>
